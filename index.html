@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SSB assignment</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Mina|Pacifico|Roboto|Ubuntu" rel="stylesheet"> -->
+    <link rel="stylesheet" href="style/style.css">
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+
+</head>
+<script>
+
+    function fontChange(font) {
+        document.getElementById("font-changer").className = '';
+        document.getElementById("font-changer").classList.add(font);
+    }
+
+
+</script>
+
+<body>
+
+    <div id="container">
+        <nav>
+            <ul>
+                <li>
+                    <a class='home' href="#">Home</a>
+                </li>
+                <li class='courses'>
+                    <a href="#">Courses</a>
+                    <!-- First Tier Drop Down -->
+                    <ul class='slideRight'>
+                        <li>
+                            <a href="#">Full Stack</a>
+                        </li>
+                        <li>
+                            <a href="#">Frontend</a>
+                            <ul class='slideUp'>
+                                <li>
+                                    <a href="#">Basic</a>
+                                </li>
+                                <li>
+                                    <a href="#">React.js</a>
+                                </li>
+                                <li>
+                                    <a href="#">Angular.js</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Backend</a>
+                            <ul class='slideUp'>
+                                <li>
+                                    <a href="#">Asp.net</a>
+                                </li>
+                                <li>
+                                    <a href="#">PHP</a>
+                                </li>
+                                <li>
+                                    <a href="#">Django</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class='tutorials'>
+                    <a href="#">Tutorials</a>
+                    <!-- First Tier Drop Down -->
+                    <ul class='slideRight'>
+                        <li>
+                            <a href="#">Examples</a>
+                        </li>
+                        <li>
+                            <a href="#">Articles</a>
+                        </li>
+                        <li>
+                            <a href="#">Video Tutorials</a>
+                            <!-- Second Tier Drop Down -->
+                            <ul class='slideUp'>
+                                <li>
+                                    <a href="#">HTML/CSS</a>
+                                </li>
+                                <li>
+                                    <a href="#">jQuery</a>
+                                </li>
+                                <li>
+                                    <a href="#">Other</a>
+                                    <!-- Third Tier Drop Down -->
+                                    <ul class='slideUp'>
+                                        <li>
+                                            <a href="#">Asp.net</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">PHP</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Javascript</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Shikhbe Shobai</a>
+                </li>
+                <li class='contact'>
+                    <a href="#">Contact</a>
+                </li>
+                <li class='about'>
+                    <a href="#">About</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="message">
+            <h1 id='font-changer'>Shikhbey Shobai </h1>
+            <p>Change font of shikhbe shobai</p>
+            <h2 class='bree'>>> Click on the font names &lt;&lt;</h2>
+            <div class="fonts-list">
+                <p class='bree'>>></p>
+                <p onclick="fontChange('roboto')" class='roboto click'>Roboto</p>
+                <p onclick="fontChange('mina')" class='mina click'>Mina</p>
+                <p onclick="fontChange('indie')" class='indie click'>Indie</p>
+                <p onclick="fontChange('pacifico')" class='pacifico click'>Pacifico</p>
+                <p onclick="fontChange('ubuntu')" class='ubuntu click'>Ubuntu</p>
+                <p class='bree'>&lt;&lt;</p>
+
+            </div>
+
+        </div>
+
+        <h2 class='bree'>grid</h2>
+
+        <div class="gallery">
+            <div class="grid-container">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>
+            </div>
+        </div>
+
+
+
+        <h2 class='bree'>grid with image gallery</h2>
+
+        <div class="gallery">
+            <div class="grid-container-img">
+                <div class="grid-item-img"> </div>
+                <div class="grid-item-img"></div>
+                <div class="grid-item-img"></div>
+                <div class="grid-item-img"></div>
+                <div class="grid-item-img"></div>
+                <div class="grid-item-img"></div>
+                <div class="grid-item-img"></div>
+                <div class="grid-item-img"></div>
+                <div class="grid-item-img"></div>
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+</body>
+
+</html>

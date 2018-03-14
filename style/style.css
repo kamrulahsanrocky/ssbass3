@@ -1,0 +1,264 @@
+                /* CSS Document */
+
+                @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+                @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+                @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Mina|Pacifico|Roboto|Ubuntu');
+                .mina {
+                    font-family: 'Mina', sans-serif;
+                }
+
+                .indie {
+                    font-family: 'Indie Flower', cursive;
+                }
+
+                .roboto {
+                    font-family: 'Roboto', sans-serif;
+                }
+
+                .pacifico {
+                    font-family: 'Pacifico', cursive;
+                    font-weight: 100;
+                }
+
+                .ubuntu {
+                    font-family: 'Ubuntu', sans-serif;
+                }
+
+                .bree {
+                    font-family: 'Bree Serif', 'serif';
+                }
+
+                body {
+                    background: #212121;
+                    font-size: 22px;
+                    line-height: 32px;
+                    color: #ffffff;
+                    word-wrap: break-word !important;
+                    font-family: 'Indie Flower', cursive;
+                }
+
+                h1 {
+                    font-size: 60px;
+                    text-align: center;
+                    color: #FFF;
+                }
+
+                h2 {
+                    text-align: center;
+                }
+
+                h3 {
+                    font-size: 30px;
+                    text-align: center;
+                    color: #FFF;
+                }
+
+                h3 a {
+                    color: #FFF;
+                }
+
+                a {
+                    color: #FFF;
+                }
+
+                h1 {
+                    margin-top: 100px;
+                    text-align: center;
+                    font-size: 60px;
+                    font-family: 'Bree Serif', 'serif';
+                }
+
+                #container {
+                    margin: 0 auto;
+                }
+
+                p {
+                    text-align: center;
+                }
+
+                nav {
+                    margin: 50px 0;
+                    background-color: #E64A19;
+                }
+
+                nav ul {
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    position: relative;
+                    opacity: 0.95;
+                }
+
+                nav ul li {
+                    display: inline-block;
+                    background-color: #E64A19;
+                }
+
+                nav a {
+                    display: block;
+                    padding: 0 10px;
+                    color: #FFF;
+                    font-size: 20px;
+                    line-height: 60px;
+                    text-decoration: none;
+                }
+
+                nav a:hover {
+                    background-color: #000000;
+                }
+                /* Hide Dropdowns by Default */
+
+                nav ul ul {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    /* the height of the main nav */
+                }
+                /* Display Dropdowns on Hover */
+
+                nav ul li:hover>ul {
+                    display: inherit;
+                }
+                /* Fisrt Tier Dropdown */
+
+                nav ul ul li {
+                    width: 180px;
+                    float: none;
+                    display: list-item;
+                    position: relative;
+                }
+                /* Second, Third and more Tiers	*/
+
+                nav ul ul ul {
+                    position: absolute;
+                    top: 0;
+                    left: 100%;
+                }
+                /* Change this in order to change the Dropdown symbol */
+
+                li>a:after {
+                    content: ' +';
+                }
+
+                li>a:only-child:after {
+                    content: '';
+                }
+
+                ul {
+                    height: 60px;
+                }
+
+                .message {
+                    text-align: center;
+                }
+
+                .fonts-list * {
+                    display: inline;
+                }
+                /* grid css */
+
+                .gallery {
+                    width: 500px;
+                    margin: 0 auto;
+                }
+
+                .grid-container {
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                    background-color: #2196F3;
+                    padding: 10px;
+                }
+
+                .grid-container-img {
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                }
+
+                .grid-item {
+                    background-color: rgb(230, 74, 25);
+                    border: 1px solid rgba(0, 0, 0, 0.8);
+                    padding: 50px;
+                    font-size: 30px;
+                    text-align: center;
+                }
+
+                .grid-item-img {
+                    background-color: rgb(230, 74, 25);
+                    border: 1px solid black;
+                    text-align: center;
+                    padding: 0px;
+                    margin: 0px;
+                    background-image: url(../img/pic.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    height: 160px;
+                    width: 100%;
+                }
+
+                .slideRight {
+                    animation-name: slideRight;
+                    -webkit-animation-name: slideRight;
+                    animation-duration: .2s;
+                    -webkit-animation-duration: .2s;
+                    animation-timing-function: ease;
+                    -webkit-animation-timing-function: ease;
+                    visibility: visible !important;
+                }
+
+                @keyframes slideRight {
+                    0% {
+                        opacity: 0;
+                        transform: translateX(+10%);
+                    }
+                    100% {
+                        opacity: 1;
+                        transform: translateX(0%);
+                    }
+                }
+
+                @-webkit-keyframes slideRight {
+                    0% {
+                        opacity: 0;
+                        -webkit-transform: translateX(+10%);
+                    }
+                    100% {
+                        opacity: 1;
+                        -webkit-transform: translateX(0%);
+                    }
+                }
+
+                .slideUp {
+                    animation-name: slideUp;
+                    -webkit-animation-name: slideUp;
+                    animation-duration: .2s;
+                    -webkit-animation-duration: .2s;
+                    animation-timing-function: ease;
+                    -webkit-animation-timing-function: ease;
+                    visibility: visible !important;
+                }
+
+                @keyframes slideUp {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(+30%);
+                    }
+                    100% {
+                        opacity: 1;
+                        transform: translateY(0%);
+                    }
+                }
+
+                @-webkit-keyframes slideUp {
+                    0% {
+                        opacity: 0;
+                        -webkit-transform: translateY(+30%);
+                    }
+                    100% {
+                        opacity: 1;
+                        -webkit-transform: translateY(0%);
+                    }
+                }
+
+                .click {
+                    cursor: pointer;
+                }
